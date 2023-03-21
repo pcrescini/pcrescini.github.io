@@ -5,8 +5,8 @@
   --platinum: #d1d1d1;
   --jet: #343434;
   --robin-egg-blue: #38d8e3;
-  --celestial-blue: #3b98d1;
-  --ultra-violet: #6e6aa2;
+  --celestial-blue: #2773A5;
+  --ultra-violet: #6968A1;
   --federal-blue: #0a054b;
   --shadow: #111111;
   --font-size-xs: 0.85714rem;
@@ -38,12 +38,6 @@ html:not(.iFrame) {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-a:focus,
-a:hover {
-  outline: none;
-  text-decoration: none;
 }
 
 h1,
@@ -250,19 +244,19 @@ iframe {
 }
 
 .color--robin-egg-blue {
-  color: #38d8e3;
+  color: var(--robin-egg-blue);
 }
 
 .color--celestial-blue {
-  color: #3b98d1;
+  color: var(--celestial-blue);
 }
 
 .color--ultra-violet {
-  color: #6e6aa2;
+  color: var(--ultra-violet);
 }
 
 .color--federal-blue {
-  color: #0a054b;
+  color: var(--federal-blue);
 }
 
 .color--shadow {

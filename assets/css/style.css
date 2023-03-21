@@ -84,6 +84,16 @@ footer a:hover {
   outline: 0px;
 }
 
+nav a:focus,
+nav a:focus-visible,
+section a:focus,
+section a:focus-visible,
+footer a:focus,
+footer a:focus-visible {
+  outline: 2px dotted red;
+  outline-offset: 5px;
+}
+
 section a:hover {
   color: var(--dark);
   outline: 0px;
@@ -96,7 +106,7 @@ footer a:hover::after {
 }
 
 .nav__links,
-.nav__links > * {
+.nav__links > *:not(.resume-link) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -525,6 +535,21 @@ i {
   color: var(--dark);
 }
 
+.skip-nav {
+  position: absolute;
+  left: 45%;
+  transform: translateY(-100%);
+  background-color: var(--celestial-blue);
+  color: var(--light);
+  padding: 10px;
+  transition: var(--transition);
+  z-index: 500;
+}
+
+.skip-nav:focus {
+  transform: translateY(0%);
+}
+
 .tag {
   font-size: var(--font-size);
 }
@@ -630,7 +655,6 @@ i {
 }
 
 @media screen and (max-width: 650px) {
-
   .contact-social a i {
     font-size: 32px;
   }
@@ -641,6 +665,10 @@ i {
 
   .container {
     flex-direction: column;
+  }
+
+  .scrolltop {
+    right: 20px;
   }
 }
 

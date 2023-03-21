@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Paul C Crescini | Front-end Web Developer</title>
@@ -22,16 +22,17 @@
 </head>
 
 <body>
+  <a id="skipNav" class="skip-nav" href="#mainContent">Skip to main content</a>
   <header>
     <nav>
-      <div class="nav__logo"><a href="/"><img src="./assets/img/logo.png" alt="PCC"></a></div>
+      <div class="nav__logo"><a href="/"><img src="./assets/img/logo.png" alt="Logo of paulcrescini.dev website" role="presentation"></a></div>
       <div class="nav__links">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a class="resume-link" href="./assets/files/paul-c-crescini-resume.pdf" target="_blank">Resume</a>
+        <a class="resume-link" href="./assets/files/paul-c-crescini-resume.pdf" target="_blank" aria-label="Link to my Resume in PDF format (opens in new tab)">Resume <i class="far fa-external-link-alt" role="presentation"></i></a>
       </div>
       <div class="nav__menu">
         <button type="button" aria-label="Menu" class="nav__menu--button">
@@ -46,14 +47,15 @@
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-            <a class="resume-link" href="./assets/files/paul-c-crescini-resume.pdf" target="_blank">Resume</a>
+            <a class="resume-link" href="./assets/files/paul-c-crescini-resume.pdf" target="_blank"
+              aria-label="Link to my Resume in PDF format (opens in new tab)">Resume <i class="far fa-external-link-alt" role="presentation"></i></a>
           </nav>
         </aside>
       </div>
     </nav>
   </header>
   <div id="overlay">
-    <main>
+    <main id="mainContent">
       <section id="hero" class="color--federal-blue">
         <div class="container">
           <div class="container__content">
@@ -82,8 +84,8 @@
               new technologies, and excited to put that knowledge into practice.</p>
           </div>
           <div class="container__content txt-right hide-mobile" data-aos="fade-left" data-aos-duration="1000">
-            <img class="fluid-img round-corners" src="./assets/img/computer-graphic.jpg" alt="Web development"
-              width="600" height="524">
+            <img class="fluid-img round-corners" src="./assets/img/computer-graphic.jpg" alt="Image of a website developed on a desktop computer, a laptop computer, a table, and a mobile phone"
+              width="600" height="524" role="presentation">
           </div>
         </div>
       </section>
@@ -98,7 +100,7 @@
               <p class="tag">ecommerce | cart storefront</p>
               <p>Bronzeville Books is an independent book publisher focussed on elevating voices and stories that have
                 long been underrepresented and need to be told.</p>
-              <p><a href="./projects/bronzeville">Learn more →</a></p>
+              <a href="./projects/bronzeville">Learn more →</a>
             </div>
           </div>
           <div class="projects__card" data-aos="fade-up-left" data-aos-duration="1000">
@@ -110,7 +112,7 @@
               <p>Knwble Grwn is a brand with a mission to support what matters most people and the planet. Their
                 products are produced by small or traditionally underrepresented farmers who use regenerative
                 agricultural practices to help protect the environment.</p>
-              <p><a href="./projects/knwble-grwn">Learn more →</a></p>
+              <a href="./projects/knwble-grwn">Learn more →</a>
             </div>
           </div>
           <div class="projects__card" data-aos="fade-up-right" data-aos-duration="1000">
@@ -122,7 +124,7 @@
               <p>Vulcan is the leading direct to consumer brand for premium firearm accessories. By cutting out
                 middlemen, leveraging social media, and utilizing global distribution networks we can provide innovative
                 and premium products at affordable prices worldwide.</p>
-              <p><a href="./projects/vulcan/">Learn more →</a></p>
+              <a href="./projects/vulcan/">Learn more →</a>
             </div>
           </div>
           <div class="projects__card" data-aos="fade-up-left" data-aos-duration="1000">
@@ -133,7 +135,7 @@
               <p class="tag">finance | magnolia cms</p>
               <p>Invesco Indexing develops and licenses customized, proprietary indexes that leverage the global scale
                 of Invesco — one of the world’s premiere global investment management firms.</p>
-              <p><a href="./projects/ivz-indexing">Learn more →</a></p>
+              <a href="./projects/ivz-indexing">Learn more →</a>
             </div>
           </div>
           <div class="projects__card" data-aos="fade-up-right" data-aos-duration="1000">
@@ -142,10 +144,9 @@
             <div class="pad-24">
               <h3>Speech Timer</h3>
               <p class="tag">personal project</p>
-              <p>Speech Timer is a tool geared towards timing speeches that follow <a
-                  href="https://www.toastmasters.org/" target="_blank" rel="noreferrer nofollow">Toastmaters
-                  International's</a> speech formats.</p>
-              <p><a href="./projects/speech-timer">Learn more →</a></p>
+              <p>Speech Timer is a tool geared towards timing speeches that follow Toastmaters
+                  International's speech formats.</p>
+              <a href="./projects/speech-timer">Learn more →</a>
             </div>
           </div>
           <div class="projects__card" data-aos="fade-up-left" data-aos-duration="1000">
@@ -155,7 +156,7 @@
               <h3>Bullseye! JavaScript Game</h3>
               <p class="tag">personal project</p>
               <p>Bullseye! is 2D game created using vanilla JavaScript, HTML5, CSS3, and HTML Canvas.</p>
-              <p><a href="./projects/video-game">Learn more →</a></p>
+              <a href="./projects/video-game">Learn more →</a>
             </div>
           </div>
         </div>
@@ -170,28 +171,28 @@
           </div>
           <div class="container__content contact-social" data-aos="fade-left" data-aos-duration="1000">
             <div class="contact-social__email">
-              <a href="mailto:paul.c.crescini@gmail.com?subject=Hello 👋🏽" target="_blank" rel="nofollow noreferrer">
-                <i class="far fa-envelope"></i><br>
+              <a href="mailto:paul.c.crescini@gmail.com?subject=Hello 👋🏽" target="_blank" rel="nofollow noreferrer" aria-label="Email me at paul.c.crescini@gmail.com">
+                <i class="far fa-envelope" role="presentation"></i><br>
                 Email
               </a>
             </div>
             <div class="contact-social__linkedin">
-              <a href="https://www.linkedin.com/in/paulccrescini/" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-linkedin"></i><br>
+              <a href="https://www.linkedin.com/in/paulccrescini/" target="_blank" rel="noreferrer" aria-label="Link to my LinkedIn Profile (opens in new tab)">
+                <i class="fa-brands fa-linkedin" role="presentation"></i><br>
                 LinkedIn
               </a>
             </div>
             <div class="contact-social__github">
-              <a href="https://github.com/pcrescini" target="_blank" rel="noreferrer"><i
-                  class="fa-brands fa-github"></i><br>Github</a>
+              <a href="https://github.com/pcrescini" target="_blank" rel="noreferrer" aria-label="Link to my Github Profile (opens in new tab)"><i
+                  class="fa-brands fa-github" role="presentation"></i><br>Github</a>
             </div>
             <div class="contact-social__twitter">
-              <a href="https://twitter.com/paulccrescini" target="_blank" rel="noreferrer"><i
-                  class="fa-brands fa-twitter"></i><br>Twitter</a>
+              <a href="https://twitter.com/paulccrescini" target="_blank" rel="noreferrer" aria-label="Link to my Twitter Account (opens in new tab)"><i
+                  class="fa-brands fa-twitter" role="presentation"></i><br>Twitter</a>
             </div>
             <div class="contact-social__instagram">
-              <a href="https://www.instagram.com/lets_eat_htx/" target="_blank" rel="noreferrer"><i
-                  class="fa-brands fa-instagram"></i><br>Instagram</a>
+              <a href="https://www.instagram.com/lets_eat_htx/" target="_blank" rel="noreferrer" aria-label="Link to my Instagram Account (opens in new tab)"><i
+                  class="fa-brands fa-instagram" role="presentation"></i><br>Instagram</a>
             </div>
           </div>
         </div>
@@ -204,7 +205,7 @@
         </p>
         <p>
           <a href="https://www.freepik.com/free-vector/responsive-design-isometric-landing-user-interface_20836284.htm#query=website%20graphics&position=40&from_view=keyword&track=ais"
-            target="_blank" rel="nofollow noreferrer">Image by <strong>upklyak</strong> on Freepik</a>
+            target="_blank" rel="nofollow noreferrer" aria-label="Image by upklyak on Freepik (opens in new tab)">Image by <strong>upklyak</strong> on Freepik</a>
         </p>
       </div>
     </footer>
