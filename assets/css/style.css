@@ -354,7 +354,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 40px;
 }
 
 .contact-social [class^="contact-social__"] {
@@ -607,11 +607,8 @@ i {
     background-color: var(--dark);
     color: var(--light);
     min-height: calc(100vh - 225px);
+    padding-top: 50px;
     padding-bottom: 0px;
-  }
-
-  .contact-social {
-    gap: 55px;
   }
 
   .container {
