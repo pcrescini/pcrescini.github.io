@@ -608,6 +608,15 @@ i {
     order: 2;
   }
 
+  .pentagon {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+    background: none;
+  }
+
   .projects__container {
     display: flex;
     flex-wrap: wrap;
