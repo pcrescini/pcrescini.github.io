@@ -316,7 +316,8 @@ section {
 #projectPage {
   background-color: var(--light);
   color: var(--dark);
-  min-height: 100vh;
+  min-height: calc(100vh - 125px);
+  margin-top: 125px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -592,7 +593,7 @@ i {
     scroll-margin-top: 99px;
   }
 
-  #hero {
+  #hero, #projectPage {
     margin-top: 100px;
     min-height: calc(100vh - 100px);
   }
