@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bullseye!</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"'">
+
+<head>
+  <title>Bullseye!</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"'">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/game-styles.css">
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YY1JD4L9W1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        ' gtm.start': new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window,
+      document, 'script', 'dataLayer', 'GTM-NCMGPWT');</script>
+  <!-- End Google Tag Manager -->
+</head>
 
-    gtag('config', 'G-YY1JD4L9W1');
-  </script>
-  <body>
-    <canvas id="gameCanvas"></canvas>
-    <img id="overlay" src="./assets/img/overlay.png">
-    <img id="obstacles" src="./assets/img/obstacles.png">
-    <img id="bull" src="./assets/img/bull.png">
-    <img id="egg" src="./assets/img/egg.png">
-    <img id="toad" src="./assets/img/toads.png">
-    <img id="larva" src="./assets/img/larva.png">
-    <script src="./assets/js/game-script.js"></script>
-  </body>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCMGPWT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <canvas id="gameCanvas"></canvas>
+  <img id="overlay" src="./assets/img/overlay.png">
+  <img id="obstacles" src="./assets/img/obstacles.png">
+  <img id="bull" src="./assets/img/bull.png">
+  <img id="egg" src="./assets/img/egg.png">
+  <img id="toad" src="./assets/img/toads.png">
+  <img id="larva" src="./assets/img/larva.png">
+  <script src="./assets/js/game-script.js"></script>
+</body>
+
 </html>
