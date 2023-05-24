@@ -364,7 +364,7 @@ section {
   border-radius: 23px 23px 0 0;
 }
 
-.projects__card p {
+.projects__card p:not(.link) {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
