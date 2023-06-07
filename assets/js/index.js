@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   hamburgerMenu.addEventListener("click", (event) => {
     event.stopPropagation();
-    console.log("menu clicked");
     documentBody.classList.toggle("nav-open");
     overlay.classList.toggle("blur");
   });
@@ -14,6 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (documentBody.classList.contains("nav-open")) {
       documentBody.classList.remove("nav-open");
       overlay.classList.remove("blur");
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.code === "Escape" && documentBody.classList.contains("nav-open")) {
+      event.stopPropagation();
+      documentBody.classList.toggle("nav-open");
+      overlay.classList.toggle("blur");
     }
   });
 
