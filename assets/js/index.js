@@ -7,20 +7,33 @@ document.addEventListener("DOMContentLoaded", () => {
     event.stopPropagation();
     documentBody.classList.toggle("nav-open");
     overlay.classList.toggle("blur");
+
+    setTimeout(() => {
+      if (documentBody.classList.contains("nav-open")) {
+        hamburgerMenu.setAttribute("aria-expanded", "true");
+      } else {
+        hamburgerMenu.setAttribute("aria-expanded", "false");
+      }
+    }, 200);
   });
 
   documentBody.addEventListener("click", () => {
     if (documentBody.classList.contains("nav-open")) {
       documentBody.classList.remove("nav-open");
       overlay.classList.remove("blur");
+      hamburgerMenu.setAttribute("aria-expanded", "false");
     }
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.code === "Escape" && documentBody.classList.contains("nav-open")) {
+    if (
+      event.code === "Escape" &&
+      documentBody.classList.contains("nav-open")
+    ) {
       event.stopPropagation();
       documentBody.classList.toggle("nav-open");
       overlay.classList.toggle("blur");
+      hamburgerMenu.setAttribute("aria-expanded", "false");
     }
   });
 
@@ -41,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     AOS.init();
   });
 
-  const footerCopyright = document.querySelector('#copyright-year');
+  const footerCopyright = document.querySelector("#copyright-year");
   const dateObj = new Date();
   const currentYear = dateObj.getFullYear();
 
@@ -61,4 +74,3 @@ function checkScrollPosition(scrollPosition) {
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
-

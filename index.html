@@ -37,10 +37,9 @@
   <!-- End Google Tag Manager (noscript) -->
   <a id="skipNav" class="skip-nav" href="#mainContent">Skip to main content</a>
   <header>
-    <nav>
       <div class="nav__logo"><a href="/"><img src="./assets/img/logo.png" alt="Logo of paulcrescini.dev website"></a>
       </div>
-      <div class="nav__links">
+      <nav class="nav__links" role="navigation" aria-label="Desktop Main Menu">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -49,15 +48,14 @@
         <a class="resume-link" href="./assets/files/paul-c-crescini-resume.pdf" target="_blank"
           aria-label="Link to my Resume in PDF format (opens in new tab)">Resume <i class="far fa-external-link-alt"
             role="presentation"></i></a>
-      </div>
-      <div class="nav__menu">
-        <button type="button" aria-label="Menu" class="nav__menu--button">
-          <div class="hamburger__menu__box">
+      </nav>
+      <nav class="nav__menu" role="navigation" aria-label="Mobile Main Menu">
+        <button type="button" class="nav__menu--button" aria-expanded="false">
+          <div class="hamburger__menu__box" aria-hidden="true" focusable="false">
             <div class="hamburger__menu__box--inner"></div>
           </div>
         </button>
         <aside class="nav__menu--sidebar">
-          <nav>
             <ul>
               <li><a href="#about">About</a></li>
               <li><a href="#projects">Projects</a></li>
@@ -66,10 +64,8 @@
             <a class="resume-link" href="./assets/files/paul-c-crescini-resume.pdf" target="_blank"
               aria-label="Link to my Resume in PDF format (opens in new tab)">Resume <i class="far fa-external-link-alt"
                 role="presentation"></i></a>
-          </nav>
         </aside>
-      </div>
-    </nav>
+      </nav>
   </header>
   <div id="overlay">
     <main id="mainContent">
