@@ -154,11 +154,13 @@ footer a:hover::after {
   z-index: 10;
   transform: translateX(100vw);
   transition: var(--transition);
+  visibility: hidden;
 }
 
 .nav-open .nav__menu--sidebar {
   transform: translateX(0);
   transition: var(--transition);
+  visibility: visible;
 }
 
 .nav__menu--sidebar nav {
